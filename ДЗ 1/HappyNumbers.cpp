@@ -13,10 +13,10 @@ int sumOfSquares(int n) {
 
 bool isHappy(int n, std::unordered_set<int>& visited) {
     if (n == 1) {
-        return true; // Найдено счастливое число
+        return true;
     }
     if (visited.find(n) != visited.end()) {
-        return false; // Обнаружено зацикливание
+        return false;
     }
     visited.insert(n);
     return isHappy(sumOfSquares(n), visited);
