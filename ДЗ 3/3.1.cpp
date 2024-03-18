@@ -55,7 +55,7 @@ public:
                 throw std::out_of_range("Ключ не найден");
             }
         }
-        table[index] = -1; // Удаляем ключ
+        table[index] = -1;
     }
 };
 
